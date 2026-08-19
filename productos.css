@@ -10,7 +10,6 @@ body {
 }
 
 
-/* HEADER */
 header {
     width: 100%;
     position: fixed;
@@ -147,6 +146,10 @@ main {
     cursor: pointer;
     border-radius: 6px;
 }
+.producto-card button:hover{
+    background-color: #1877F2;
+    box-shadow: 2px 2px 4px rgb(15, 37, 229);
+}
 
 
 .producto-card button:hover {
@@ -163,15 +166,28 @@ footer {
 
 
 .redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
     margin-bottom: 20px;
 }
-
 .redes a {
-    text-decoration: none;
-    color: rgb(229, 222, 15);
-    font-size: 30px;
-    margin: 0 15px;
+    width: 55px;
+    height: 55px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+.redes a i {
+  font-size: 26px;
+}
+.redes a .fa-whatsapp  { color: #075E54; }
+.redes a .fa-facebook  { color: #1877F2; }
+.redes a .fa-instagram { color: #C13584; }
+.redes a .fa-youtube   { color: #FF0000; }
 
 footer hr {
     margin-bottom: 20px;
@@ -204,7 +220,6 @@ footer p {
         flex-direction: column;
         text-align: center;
     }
-
 
     .menu a {
         padding: 15px;

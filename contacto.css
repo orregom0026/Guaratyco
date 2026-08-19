@@ -25,19 +25,16 @@ nav img {
     width: 80px;
 }
 
-
 .menu {
     display: flex;
     gap: 30px;
 }
-
 
 .menu a {
     text-decoration: none;
     color: rgb(229, 222, 15);
     font-weight: bold;
 }
-
 
 nav > a {
     background-color: rgb(229, 222, 15);
@@ -49,21 +46,17 @@ nav > a {
     cursor: pointer;
 }
 
-
 #menu_bar {
     display: none;
 }
-
 
 label[for="menu_bar"] {
     display: none;
 }
 
-
 main {
     margin-top: 78px;
 }
-
 
 .contacto {
     width: 100%;
@@ -71,17 +64,14 @@ main {
     padding: 40px;
 }
 
-
 .contacto h2 {
     color: rgb(229, 222, 15);
     margin-bottom: 20px;
 }
 
-
 .contacto p {
     margin-bottom: 20px;
 }
-
 
 .informacion-contacto {
     margin-top: 30px;
@@ -90,17 +80,14 @@ main {
     border-radius: 10px;
 }
 
-
 .informacion-contacto h3 {
     color: rgb(230, 55, 158);
     margin-bottom: 20px;
 }
 
-
 .informacion-contacto p {
     margin-bottom: 15px;
 }
-
 
 .formulario-contacto {
     margin-top: 30px;
@@ -109,25 +96,21 @@ main {
     border-radius: 10px;
 }
 
-
 .formulario-contacto h3 {
     color: rgb(230, 55, 158);
     margin-bottom: 20px;
 }
-
 
 .formulario-contacto form {
     display: flex;
     flex-direction: column;
 }
 
-
 .formulario-contacto label {
     text-align: left;
     margin-bottom: 5px;
     font-weight: bold;
 }
-
 
 .formulario-contacto input,
 .formulario-contacto textarea {
@@ -137,13 +120,10 @@ main {
     border-radius: 5px;
 }
 
-
 .formulario-contacto textarea {
     height: 120px;
     resize: none;
 }
-
-/* BOTON */
 
 .formulario-contacto button {
     background-color: rgb(230, 55, 158);
@@ -155,13 +135,10 @@ main {
     cursor: pointer;
 }
 
-/* ICONOS */
-
 .informacion-contacto i {
     color: rgb(230, 55, 158);
     margin-right: 8px;
 }
-
 
 .contenedor-contacto {
     display: flex;
@@ -170,11 +147,9 @@ main {
     align-items: flex-start;
 }
 
-
 .datos-contacto {
     width: 45%;
 }
-
 
 .ubicacion {
     width: 45%;
@@ -184,19 +159,16 @@ main {
     border-radius: 10px;
 }
 
-
 .ubicacion h3 {
     color: rgb(230, 55, 158);
     margin-bottom: 20px;
 }
-
 
 .ubicacion iframe {
     width: 100%;
     height: 450px;
     border: none;
 }
-
 
 footer {
     width: 100%;
@@ -205,28 +177,37 @@ footer {
     padding: 25px;
 }
 
-
 .redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
     margin-bottom: 20px;
 }
-
 .redes a {
-    text-decoration: none;
-    color: rgb(229, 222, 15);
-    font-size: 30px;
-    margin: 0 15px;
+    width: 55px;
+    height: 55px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-
+.redes a i {
+  font-size: 26px;
+}
+.redes a .fa-whatsapp  { color: #075E54; }
+.redes a .fa-facebook  { color: #1877F2; }
+.redes a .fa-instagram { color: #C13584; }
+.redes a .fa-youtube   { color: #FF0000; }
 footer hr {
     margin-bottom: 20px;
 }
 
-
 footer p {
     color: white;
 }
-
 
 @media (max-width: 480px) {
 
@@ -263,6 +244,15 @@ footer p {
     .redes a {
         font-size: 28px;
         margin: 0 10px;
+    }
+
+    .contenedor-contacto {
+        flex-direction: column;
+    }
+
+    .datos-contacto,
+    .ubicacion {
+        width: 100%;
     }
 
 }
