@@ -128,10 +128,10 @@ main {
 
 .contenedor-ventajas {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 20px;
 }
-
 
 .ventaja {
   width: 22%;
@@ -189,14 +189,12 @@ footer p {
 
 @media (max-width: 480px) {
 
-
   label[for="menu_bar"] {
     display: block;
     cursor: pointer;
     font-size: 30px;
     color: rgb(229, 222, 15);
   }
-
 
   .menu {
     position: absolute;
@@ -209,29 +207,30 @@ footer p {
     text-align: center;
   }
 
-
   .menu a {
     padding: 15px;
   }
-
-
   #menu_bar:checked ~ .menu {
     display: flex;
   }
-
-
   .compañia {
       padding: 25px 15px;
   }
-
-
   footer {
     padding: 20px 10px;
   }
-
   .redes a {
     font-size: 28px;
     margin: 0 10px;
+  }
+  .ventaja {
+    width: 85%;
+  }
+  #nosotros {
+    flex-direction: column;
+  }
+  #nosotros img {
+    width: 100%;
   }
 
 }
